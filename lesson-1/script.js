@@ -80,42 +80,56 @@
 // let majburiyMaskBall = 50
 // let majburiyFanlar = matematika + onatili + tarix;
 
-// if (majburiyFanlar >= 30 && majburiyFanlar <= majburiyMaskBall) {
-//     alert(`Tabriklayman ${ism}! Siz majburiy fanlardan ${majburiyFanlar} ball to'plab keyingi boshqichga chiqdingiz`)
-//     alert(`${ism} endi Asosiy fanlardan to'plagan ballaringizni ayting:
-//         Asosiy fanlarda maksimal 169 ball`)
-//     let fizika = +prompt("Fizikadan olgan ball:")
-//     let ingliz = +prompt("Inglizdan olgan ball:")
-//     let informatika = +prompt("Informatikadan olgan ball:");
-//     let asosiyFanlar = ingliz + informatika + fizika;
-//     let asosiyMaksBall = 169;
-//     let umumiyBall = majburiyFanlar + asosiyFanlar;
-//     if (umumiyBall >= 170 && umumiyBall <= umumiyMaksBall && asosiyFanlar <= asosiyMaksBall) {
-//         alert(`${ism} TABRIKLAYMIZ! Siz ${umumiyBall} ball to'plab Byudjetga kirdingiz!
-//             ${familiya} ${ism}:
-//             Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
-//     } else if (umumiyBall < 170 && umumiyBall >= 120) {
-//         alert(`${ism} Tabriklaymiz! Siz ${umumiyBall} ball to'plab kontrakga kirdingiz!
-//             ${familiya} ${ism}:
-//             Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
-//     } else if (umumiyBall < 120 && umumiyBall >= 70) {
-//         alert(`${ism}! Siz ${umumiyBall} ball to'plab SUPERKontraktga kirdingiz!
-//             ${familiya} ${ism}:
-//             Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
-//     }else if(umumiyBall>umumiyMaksBall){
-//         alert(`Hurmatli ${ism} asosiy fanlardan maksimal 169 ball olish mumkin`)
+// if (majburiyFanlar != NaN) {
+//     if (majburiyFanlar >= 30 && majburiyFanlar <= majburiyMaskBall) {
+//         alert(`Tabriklayman ${ism}! Siz majburiy fanlardan ${majburiyFanlar} ball to'plab keyingi boshqichga chiqdingiz`)
+//         alert(`${ism} endi Asosiy fanlardan to'plagan ballaringizni ayting:
+//             Asosiy fanlarda maksimal 169 ball`)
+//         let fizika = +prompt("Fizikadan olgan ball:")
+//         let ingliz = +prompt("Inglizdan olgan ball:")
+//         let informatika = +prompt("Informatikadan olgan ball:");
+//         let asosiyFanlar = ingliz + informatika + fizika;
+//         let asosiyMaksBall = 169;
+//         let umumiyBall = majburiyFanlar + asosiyFanlar;
+//         if (umumiyBall >= 170 && umumiyBall <= umumiyMaksBall && asosiyFanlar <= asosiyMaksBall) {
+//             alert(`${ism} TABRIKLAYMIZ! Siz ${umumiyBall} ball to'plab Byudjetga kirdingiz!
+//                 ${familiya} ${ism}:
+//                 Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
+//         } else if (umumiyBall < 170 && umumiyBall >= 120) {
+//             alert(`${ism} Tabriklaymiz! Siz ${umumiyBall} ball to'plab kontrakga kirdingiz!
+//                 ${familiya} ${ism}:
+//                 Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
+//         } else if (umumiyBall < 120 && umumiyBall >= 70) {
+//             alert(`${ism}! Siz ${umumiyBall} ball to'plab SUPERKontraktga kirdingiz!
+//                 ${familiya} ${ism}:
+//                 Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
+//         } else if (umumiyBall > umumiyMaksBall) {
+//             alert(`Hurmatli ${ism} asosiy fanlardan maksimal 169 ball olish mumkin`)
+//         }
+//         else {
+//             alert(`${ism} AFSUS... Siz ${umumiyBall} ball to'plab SuperKontraktga ham kiraolmadingiz...
+//                 ${familiya} ${ism}:
+//                 Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
+//         }
+//     } else if (majburiyFanlar > majburiyMaskBall) {
+//         alert(`${ism} Majburiy fanlardan ${majburiyFanlar} ball to'plab bo'lmaydi, Maksimal 50 ball`)
 //     }
-//     else{
-//         alert(`${ism} AFSUS... Siz ${umumiyBall} ball to'plab SuperKontraktga ham kiraolmadingiz...
-//             ${familiya} ${ism}:
-//             Majburiy fanlardan ${majburiyFanlar} ball va asosiy fanlardan ${asosiyFanlar} ball to'pladingiz`)
+//     else if (majburiyFanlar < 30) {
+//         alert(`${ism} Majburiy fanlardan ${majburiyFanlar} ball to'pladingiz, asosiy fanlarga o'tish uchun 30 va undan yuqori ball olishiz kerak`)
+//     } else {
+//         alert("Nimadir xato ketdi...")
 //     }
-// } else if (majburiyFanlar > majburiyMaskBall) {
-//     alert(`${ism} Majburiy fanlardan ${majburiyFanlar} ball to'plab bo'lmaydi, Maksimal 50 ball`)
-// }
-// else if (majburiyFanlar < 30) {
-//     alert(`${ism} Majburiy fanlardan ${majburiyFanlar} ball to'pladingiz, asosiy fanlarga o'tish uchun 30 va undan yuqori ball olishiz kerak`)
 // } else {
-//     alert("Nimadir xato ketdi...")
+//     alert("Siz ballarni harflarda kiritishingiz kerak")
 // }
 
+
+// 6 - mashq
+
+// let name = prompt("Ismingizni kiriting:")
+// let surname = prompt("Familiyangizni kiriting:")
+// if(name.length>surname.length){
+//     alert("Ismingiz familiyangizdan uzun")
+// }else{
+//     alert("Familiyangiz ismingizdan uzun ekan")
+// }
