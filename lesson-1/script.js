@@ -128,8 +128,12 @@
 
 // let name = prompt("Ismingizni kiriting:")
 // let surname = prompt("Familiyangizni kiriting:")
+
 // if(name.length>surname.length){
+
 //     alert("Ismingiz familiyangizdan uzun")
 // }else{
 //     alert("Familiyangiz ismingizdan uzun ekan")
 // }
+
+
